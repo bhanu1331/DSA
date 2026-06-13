@@ -1,0 +1,19 @@
+
+import java.util.*;
+public class Main { 
+    public static void main(String[] args) {
+        
+         String str = "hello"; 
+ 
+        for (char ch : str.toCharArray()) { 
+            int count = 0; 
+ 
+            for (char c : str.toCharArray()) { 
+                if (ch == c) 
+                    count++; 
+            } 
+ 
+            System.out.println(ch + " = " + count); 
+        } 
+    } 
+}

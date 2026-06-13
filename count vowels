@@ -1,0 +1,14 @@
+import java.util.Arrays; 
+ 
+public class Main { 
+    public static void main(String[] args) { 
+        String nums ="Programming";
+        int c=0;
+        for(char ch : nums.toCharArray()){
+            if("aeiouAEIOU".indexOf(ch)!=-1){
+                c++;
+            }
+        }
+        System.out.println(c); 
+    } 
+}

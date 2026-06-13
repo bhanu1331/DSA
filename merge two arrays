@@ -1,0 +1,19 @@
+
+import java.util.Arrays;
+public class Main { 
+    public static void main(String[] args) {
+         int [] r =  {1, 0, 3, 0, 5}; 
+         int [] m =  {5,7,8,3,4,9};
+        
+         int [] rm = new int[r.length+m.length];
+         for(int i=0;i<r.length;i++){
+             rm[i]=r[i];
+         }
+         for(int i=0;i<m.length;i++){
+             rm[r.length+i]=m[i];
+         
+         }
+         
+            System.out.println(Arrays.toString(rm));
+    }
+}
